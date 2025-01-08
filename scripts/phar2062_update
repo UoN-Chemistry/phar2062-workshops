@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+#
+# Update the workshop file and folders structure
+#
+git fetch origin main
+git checkout .
