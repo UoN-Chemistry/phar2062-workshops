@@ -1,6 +1,6 @@
 # phar2062-workshops
 
-This repository holds the folders and tutor-supplied files for the PHA2062 module.
+This repository holds the folders and tutor-supplied files for the PHAR2062 module.
 
 Once downloaded, the script "setup.sh" should be run. This will install two helper commands for the user:
 
