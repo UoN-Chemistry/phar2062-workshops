@@ -12,7 +12,7 @@ def create_platform_scripts():
     for script in scripts:
         # Unix version
         with open(os.path.join(script_dir, f'{script}'), 'w') as f:
-            f.write('#!/bin/sh\n')
+            f.write('#!/usr/bin/env sh\n')
             f.write('git fetch origin main\n')
             f.write('git clean -fd\n')
             if script == 'phar2062_restore':
