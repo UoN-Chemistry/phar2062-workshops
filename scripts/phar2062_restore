@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-#
-# Restore the workshop file and folders structure to the original state
-#
-git checkout .
