@@ -14,14 +14,18 @@ def create_platform_scripts():
         with open(os.path.join(script_dir, f'{script}'), 'w') as f:
             f.write('#!/usr/bin/env sh\n')
             f.write('git fetch origin main\n')
-            if script == 'phar2062_restore':
+            if script == 'phar2062_update':
+                f.write('git pull origin main\n')
+            else:
                 f.write('git reset --hard origin/main\n')
         
         # Windows version
         with open(os.path.join(script_dir, f'{script}.bat'), 'w') as f:
             f.write('@echo off\n')
             f.write('git fetch origin main\n')
-            if script == 'phar2062_restore':
+            if script == 'phar2062_update':
+                f.write('git pull origin main\n')
+            else:
                 f.write('git reset --hard origin/main\n')
 
 create_platform_scripts()
