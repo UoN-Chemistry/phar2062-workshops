@@ -1,0 +1,4 @@
+ 1 H  1.0078 Hydrogen
+ 2 He 4.0026 Helium
+ 3 Li 6.9410 Lithium
+15 P 30.9740 Phosphorus
